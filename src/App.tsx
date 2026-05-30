@@ -17,7 +17,13 @@ function Shell() {
   const { lang, t } = useI18n();
 
   useEffect(() => {
-    applyPageMeta(t.meta.title, t.meta.description);
+    const { title, description } = t.meta;
+    const apply = () => applyPageMeta(title, description);
+    if ("requestIdleCallback" in window) {
+      const id = requestIdleCallback(apply, { timeout: 200 });
+      return () => cancelIdleCallback(id);
+    }
+    apply();
   }, [lang, t]);
 
   return (

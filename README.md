@@ -39,6 +39,20 @@ npm run build
 
 Output is written to `dist/`. TypeScript is checked (`tsc -b`) before Vite bundles the app.
 
+## Lighthouse / performance testing
+
+Run audits against the **production build**, not `npm run dev`. The dev server serves unminified bundles and skews Performance and Best Practices scores.
+
+```bash
+npm run build
+$env:VITE_BASE_PATH="/ericson-varoto-io/"; npm run preview   # PowerShell
+# VITE_BASE_PATH=/ericson-varoto-io/ npm run preview         # macOS / Linux
+```
+
+Then open the preview URL (for example `http://localhost:4173/ericson-varoto-io/`) in Chrome Incognito without extensions.
+
+**GitHub Pages limits:** custom security headers (CSP, HSTS, COOP) and long-lived cache headers for `index.html` cannot be set on GitHub Pages. Hashed assets under `dist/assets/` still benefit from browser caching after deploy.
+
 ## GitHub Pages deployment
 
 The site is deployed from the **`ericson-varoto-io`** repository (project site, not `username.github.io` root).
