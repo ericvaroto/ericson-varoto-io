@@ -1,8 +1,9 @@
 import { useI18n } from "../i18n";
-import { CV_AVAILABLE, CV_PATH, FULL_NAME, LINKEDIN_URL } from "../data/profile";
+import { CV_AVAILABLE, CV_BY_LANG, FULL_NAME, LINKEDIN_URL } from "../data/profile";
 
 export default function Hero() {
-  const { t } = useI18n();
+  const { t, lang } = useI18n();
+  const cv = CV_BY_LANG[lang];
   return (
     <section id="top" className="hero">
       <div className="container reveal">
@@ -19,7 +20,7 @@ export default function Hero() {
             {t.hero.primary}
           </a>
           {CV_AVAILABLE ? (
-            <a className="btn btn-secondary" href={CV_PATH} target="_blank" rel="noopener noreferrer">
+            <a className="btn btn-secondary" href={cv.path} download={cv.downloadName}>
               {t.hero.secondary}
             </a>
           ) : (

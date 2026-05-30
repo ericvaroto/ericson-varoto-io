@@ -43,9 +43,9 @@ O repositório deve ser `ericsonvaroto/ericsonvaroto.github.io`.
 
 1. Coloque o arquivo em `public/cv.pdf`.
 2. Em `src/data/profile.ts` altere:
-   ```ts
+  ```ts
    export const CV_AVAILABLE = true;
-   ```
+  ```
 3. O botão "Download CV" / "Baixar CV" passará a apontar para `/cv.pdf`.
 
 ## Alterar traduções
