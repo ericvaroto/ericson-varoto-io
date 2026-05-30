@@ -1,0 +1,33 @@
+import { useI18n } from "../i18n";
+
+export default function Experience() {
+  const { t } = useI18n();
+  return (
+    <section id="experience">
+      <div className="container">
+        <h2>{t.experience.title}</h2>
+        <div className="timeline">
+          {t.experience.items.map((item, i) => (
+            <article className="exp-card" key={i}>
+              <div className="exp-head">
+                <span className="exp-company">{item.company}</span>
+                <span className="exp-meta">
+                  {item.period} · {item.location}
+                </span>
+              </div>
+              <div className="exp-role">{item.role}</div>
+              <ul>
+                {item.bullets.map((b, j) => (
+                  <li key={j}>{b}</li>
+                ))}
+              </ul>
+              <div className="exp-stack">
+                <strong>Stack:</strong> {item.stack}
+              </div>
+            </article>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+}
