@@ -19,10 +19,10 @@ export const enUS: Translation = {
     menuLabel: "Open menu",
   },
   hero: {
-    headline: "Tech Lead & Senior Backend Engineer",
+    headline: "Tech Lead | Senior Backend Engineer",
     tags: ["Cloud Architecture", "AWS", "C# .NET", "Python", "Observability", "SRE"],
     short:
-      "10+ years building high-scale backend solutions for mission-critical applications — cloud, microservices, distributed systems, observability and reliability.",
+      "10+ years building reliable backend and cloud solutions for high-scale, mission-critical systems.",
     primary: "View LinkedIn",
     secondary: "Download CV",
     secondaryComingSoon: "CV coming soon",
@@ -30,7 +30,7 @@ export const enUS: Translation = {
   about: {
     title: "About",
     p1: "Senior Software Engineer and Tech Lead with over 10 years of experience building corporate software solutions, with a strong focus on backend engineering, cloud architecture, microservices, distributed systems, observability and reliability for mission-critical applications.",
-    p2: "I work in high-scale financial environments, technically leading agile squads, supporting architectural decisions, solution design, code review, technical mentoring, API development, system integrations and production support.",
+    p2: "I have experience in high-scale financial environments, technically leading agile squads, supporting architectural decisions, solution design, code review, technical mentoring, API development, system integrations and production support.",
     p3: "Experienced with C#, .NET, Python, JavaScript, Kotlin, AWS, Lambda, ECS, EKS, DynamoDB, S3, SQS, CloudWatch, Kafka, SQL Server, Datadog, Grafana, Terraform, CI/CD, REST APIs and event-driven architecture.",
     p4: "I have also been applying AI throughout the software development lifecycle using tools such as Devin, GitHub Copilot and StackSpot, supporting solution design, unit test creation, code analysis and productivity improvements while maintaining technical quality.",
     interests:
@@ -44,6 +44,22 @@ export const enUS: Translation = {
       arch: "Architecture and Reliability",
       tools: "Tools",
     },
+    items: {
+      backend: ["C#", ".NET", "ASP.NET", "Python", "JavaScript", "TypeScript", "Kotlin", "REST APIs", "Microservices"],
+      cloud: ["AWS", "Lambda", "ECS", "EKS", "DynamoDB", "S3", "SQS", "CloudWatch", "Terraform", "CI/CD"],
+      arch: [
+        "Distributed Systems",
+        "Event-Driven Architecture",
+        "Observability",
+        "SRE",
+        "Incident Analysis",
+        "Postmortems",
+        "FinOps",
+        "Unit Tests",
+        "Integration Tests",
+      ],
+      tools: ["Datadog", "Grafana", "Git", "GitHub", "Devin", "GitHub Copilot", "StackSpot"],
+    },
   },
   experience: {
     title: "Experience",
@@ -53,7 +69,7 @@ export const enUS: Translation = {
       {
         company: "Itaú Unibanco",
         role: "Senior Software Engineer | Tech Lead",
-        period: "Oct 2021 — Present",
+        period: "Oct 2021 - Present",
         location: "São Paulo, Brazil",
         bullets: [
           "Technical leadership of agile squads developing high-scale backend solutions in the cloud.",
@@ -70,7 +86,7 @@ export const enUS: Translation = {
       {
         company: "Itaú Unibanco",
         role: "Mid-Level Project Analyst | Full Stack",
-        period: "Dec 2019 — Oct 2021",
+        period: "Dec 2019 - Oct 2021",
         location: "São Paulo, Brazil",
         bullets: [
           "Full-stack development for the Payroll Loan product, from refinement to production support.",
@@ -82,29 +98,29 @@ export const enUS: Translation = {
       {
         company: "Indra",
         role: "Mid-Level Systems Analyst | Full Stack",
-        period: "Jun 2018 — Nov 2019",
+        period: "Jun 2018 - Nov 2019",
         location: "São Paulo, Brazil",
         bullets: [
-          "Outsourced project for a large bank, focused on automations and corporate applications.",
-          "Development and support of desktop and web systems, integrations and evolutive maintenance.",
+          "Outsourced project for Itaú Unibanco, focused on automations and corporate applications.",
+          "Development and support of desktop and web systems, integrations, ongoing maintenance and continuous improvement.",
         ],
         stack: "C#, SQL Server, web and desktop applications.",
       },
       {
         company: "Stefanini Brasil",
         role: "Mid-Level Developer Analyst | Full Stack",
-        period: "Apr 2016 — May 2018",
+        period: "Apr 2016 - May 2018",
         location: "São Paulo, Brazil",
         bullets: [
           "Support and development of global Service Desk systems, with international collaboration.",
-          "Moved to an internal BPM/ECM project, with deployments across Brazil.",
+          "Later transitioned to an internal BPM/ECM project, supporting deployments across Brazil.",
         ],
         stack: "C#, ASP.NET WebForms, ASP.NET MVC, SQL Server, jQuery, JavaScript.",
       },
       {
         company: "Telefônica Brasil",
-        role: "Marketing Developer Analyst | Full Stack",
-        period: "Aug 2014 — Mar 2016",
+        role: "Marketing Systems Analyst | Full Stack",
+        period: "Aug 2014 - Mar 2016",
         location: "São Paulo, Brazil",
         bullets: [
           "Led support and tech upgrades on a B2B marketing tool (Front, Back, DB, Server).",
@@ -115,7 +131,7 @@ export const enUS: Translation = {
       {
         company: "T-Systems do Brasil",
         role: "Junior Developer / Intern",
-        period: "Sep 2012 — Jul 2014",
+        period: "Sep 2012 - Jul 2014",
         location: "São Bernardo do Campo, Brazil",
         bullets: [
           "Development and maintenance of a customer support tool.",
@@ -162,19 +178,23 @@ export const enUS: Translation = {
       "SRE - Trained",
       "Vibe Coding",
       "Bot Developer",
-      "Jumpstart To Automation Anywhere",
+      "Automation Anywhere - Jumpstart for Developers",
       "Salesforce - Workflow Digital - Trained",
     ],
     awards: [
-      "Você em Alta — High Performer Recognition",
-      "PRAD — High Performance Compensation Program",
+      "Você em Alta - High Performer Recognition",
+      "PRAD - High Performance Compensation Program",
     ],
   },
   education: {
     title: "Education",
     school: "Faculdade Engenheiro Salvador Arena",
     course: "Systems Analysis and Development",
-    period: "June 2011 — June 2014",
+    period: "June 2011 - June 2014",
+  },
+  siteAbout: {
+    title: "About this site",
+    text: "This website was built with React and Vite as a personal project using an AI-assisted development workflow. I used ChatGPT for prompt structuring and content refinement, Lovable to accelerate interface prototyping, and Cursor for technical adjustments, code refinement, deployment and final improvements.",
   },
   contact: {
     title: "Contact",

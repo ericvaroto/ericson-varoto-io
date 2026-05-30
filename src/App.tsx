@@ -8,6 +8,7 @@ import Experience from "./components/Experience";
 import FocusAreas from "./components/FocusAreas";
 import Certifications from "./components/Certifications";
 import Education from "./components/Education";
+import SiteAbout from "./components/SiteAbout";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 
@@ -38,6 +39,7 @@ function Shell() {
         <FocusAreas />
         <Certifications />
         <Education />
+        <SiteAbout />
         <Contact />
       </main>
       <Footer />

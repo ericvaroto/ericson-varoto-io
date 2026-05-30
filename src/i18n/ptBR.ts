@@ -19,10 +19,10 @@ export const ptBR: Translation = {
     menuLabel: "Abrir menu",
   },
   hero: {
-    headline: "Tech Lead & Engenheiro Backend Sênior",
+    headline: "Tech Lead | Engenheiro Backend Sênior",
     tags: ["Arquitetura Cloud", "AWS", "C# .NET", "Python", "Observabilidade", "SRE"],
     short:
-      "Mais de 10 anos construindo soluções backend de alta escala para aplicações críticas — cloud, microsserviços, sistemas distribuídos, observabilidade e confiabilidade.",
+      "Mais de 10 anos construindo soluções backend e cloud confiáveis para sistemas críticos de alta escala.",
     primary: "Ver LinkedIn",
     secondary: "Baixar CV",
     secondaryComingSoon: "Currículo em breve",
@@ -34,7 +34,7 @@ export const ptBR: Translation = {
     p3: "Tenho experiência com C#, .NET, Python, JavaScript, Kotlin, AWS, Lambda, ECS, EKS, DynamoDB, S3, SQS, CloudWatch, Kafka, SQL Server, Datadog, Grafana, Terraform, CI/CD, APIs REST e arquitetura orientada a eventos.",
     p4: "Também venho aplicando IA ao longo do ciclo de desenvolvimento de software com ferramentas como Devin, GitHub Copilot e StackSpot, apoiando desenho de soluções, criação de testes unitários, análise de código e ganho de produtividade com qualidade técnica.",
     interests:
-      "Principais interesses: Backend Engineering, Cloud Architecture, Distributed Systems, Observability, SRE, Tech Leadership e uso prático de IA em engenharia de software.",
+      "Principais interesses: engenharia backend, arquitetura cloud, sistemas distribuídos, observabilidade, SRE, liderança técnica e uso prático de IA em engenharia de software.",
   },
   skills: {
     title: "Competências",
@@ -43,6 +43,22 @@ export const ptBR: Translation = {
       cloud: "Cloud e DevOps",
       arch: "Arquitetura e Confiabilidade",
       tools: "Ferramentas",
+    },
+    items: {
+      backend: ["C#", ".NET", "ASP.NET", "Python", "JavaScript", "TypeScript", "Kotlin", "APIs REST", "Microsserviços"],
+      cloud: ["AWS", "Lambda", "ECS", "EKS", "DynamoDB", "S3", "SQS", "CloudWatch", "Terraform", "CI/CD"],
+      arch: [
+        "Sistemas Distribuídos",
+        "Arquitetura Orientada a Eventos",
+        "Observabilidade",
+        "SRE",
+        "Análise de Incidentes",
+        "Postmortems",
+        "FinOps",
+        "Testes Unitários",
+        "Testes Integrados",
+      ],
+      tools: ["Datadog", "Grafana", "Git", "GitHub", "Devin", "GitHub Copilot", "StackSpot"],
     },
   },
   experience: {
@@ -53,7 +69,7 @@ export const ptBR: Translation = {
       {
         company: "Itaú Unibanco",
         role: "Engenheiro de Software Sênior | Tech Lead",
-        period: "Out 2021 — Presente",
+        period: "Out 2021 - Presente",
         location: "São Paulo, Brasil",
         bullets: [
           "Liderança técnica de squads ágeis no desenvolvimento de soluções backend de alta escala em cloud.",
@@ -70,7 +86,7 @@ export const ptBR: Translation = {
       {
         company: "Itaú Unibanco",
         role: "Analista de Projetos Pleno | Full Stack",
-        period: "Dez 2019 — Out 2021",
+        period: "Dez 2019 - Out 2021",
         location: "São Paulo, Brasil",
         bullets: [
           "Desenvolvimento full stack para o produto Consignado, do refinamento à sustentação.",
@@ -82,10 +98,10 @@ export const ptBR: Translation = {
       {
         company: "Indra",
         role: "Analista de Sistemas Pleno | Full Stack",
-        period: "Jun 2018 — Nov 2019",
+        period: "Jun 2018 - Nov 2019",
         location: "São Paulo, Brasil",
         bullets: [
-          "Projeto alocado para grande banco, foco em automações e aplicações corporativas.",
+          "Projeto terceirizado para o Itaú Unibanco, com foco em automações e aplicações corporativas.",
           "Desenvolvimento e sustentação de sistemas desktop e web, integrações e manutenção evolutiva.",
         ],
         stack: "C#, SQL Server, aplicações web e desktop.",
@@ -93,7 +109,7 @@ export const ptBR: Translation = {
       {
         company: "Stefanini Brasil",
         role: "Analista Programador Pleno | Full Stack",
-        period: "Abr 2016 — Mai 2018",
+        period: "Abr 2016 - Mai 2018",
         location: "São Paulo, Brasil",
         bullets: [
           "Sustentação e desenvolvimento de sistemas globais de Service Desk, com interação internacional.",
@@ -104,7 +120,7 @@ export const ptBR: Translation = {
       {
         company: "Telefônica Brasil",
         role: "Analista Programador em Marketing | Full Stack",
-        period: "Ago 2014 — Mar 2016",
+        period: "Ago 2014 - Mar 2016",
         location: "São Paulo, Brasil",
         bullets: [
           "Liderança em sustentação e upgrades de ferramentas de marketing B2B (Front, Back, DB, Servidor).",
@@ -115,7 +131,7 @@ export const ptBR: Translation = {
       {
         company: "T-Systems do Brasil",
         role: "Analista Programador / Estagiário",
-        period: "Set 2012 — Jul 2014",
+        period: "Set 2012 - Jul 2014",
         location: "São Bernardo do Campo, Brasil",
         bullets: [
           "Desenvolvimento e manutenção de ferramenta de suporte ao cliente.",
@@ -129,15 +145,15 @@ export const ptBR: Translation = {
     title: "Foco Profissional",
     cards: [
       {
-        title: "Backend Engineering",
+        title: "Engenharia Backend",
         desc: "Desenvolvimento de APIs e serviços backend de alta performance, baixa latência e alta confiabilidade.",
       },
       {
-        title: "Cloud Architecture",
+        title: "Arquitetura Cloud",
         desc: "Arquitetura cloud-native em AWS com Lambda, ECS, EKS, DynamoDB, S3, SQS e CloudWatch.",
       },
       {
-        title: "Distributed Systems",
+        title: "Sistemas Distribuídos",
         desc: "Microsserviços, arquitetura orientada a eventos e integrações de alto volume transacional.",
       },
       {
@@ -162,7 +178,7 @@ export const ptBR: Translation = {
       "SRE - Trained (pt-BR)",
       "Vibe Coding",
       "Bot Developer",
-      "Jumpstart To Automation Anywhere",
+      "Automation Anywhere - Jumpstart for Developers",
       "Salesforce - Workflow Digital - Trained",
     ],
     awards: [
@@ -174,7 +190,11 @@ export const ptBR: Translation = {
     title: "Formação",
     school: "Faculdade Engenheiro Salvador Arena",
     course: "Análise e Desenvolvimento de Sistemas",
-    period: "Junho de 2011 — Junho de 2014",
+    period: "Junho de 2011 - Junho de 2014",
+  },
+  siteAbout: {
+    title: "Sobre este site",
+    text: "Este site foi desenvolvido em React e Vite como um projeto pessoal, utilizando um fluxo de desenvolvimento assistido por IA. Usei ChatGPT para estruturação de prompts e refinamento de conteúdo, Lovable para acelerar a prototipação da interface e Cursor para ajustes técnicos, refinamento do código, deploy e melhorias finais.",
   },
   contact: {
     title: "Contato",

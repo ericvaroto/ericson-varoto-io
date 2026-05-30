@@ -59,6 +59,7 @@ export interface Translation {
   skills: {
     title: string;
     groups: { backend: string; cloud: string; arch: string; tools: string };
+    items: { backend: string[]; cloud: string[]; arch: string[]; tools: string[] };
   };
   experience: { title: string; present: string; stackLabel: string; items: ExperienceItem[] };
   focus: { title: string; cards: FocusCard[] };
@@ -70,6 +71,7 @@ export interface Translation {
     awards: string[];
   };
   education: { title: string; school: string; course: string; period: string };
+  siteAbout: { title: string; text: string };
   contact: { title: string; text: string; cta: string };
   footer: { text: string };
 }

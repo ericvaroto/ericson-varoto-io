@@ -28,6 +28,7 @@ body {
   color: var(--text);
   -webkit-font-smoothing: antialiased;
   scroll-behavior: smooth;
+  scroll-padding-top: 72px;
 }
 
 a {
@@ -171,28 +172,51 @@ section h2::before {
 }
 
 @media (max-width: 760px) {
+  section {
+    padding: 3.5rem 0;
+  }
+  section h2 {
+    margin-bottom: 1.35rem;
+  }
+  .hero {
+    padding: 4rem 0 3rem;
+  }
+}
+
+@media (max-width: 960px) {
   .header-inner {
-    display: grid;
-    grid-template-columns: 1fr auto auto;
-    grid-template-areas:
-      "brand toggle navright"
-      "nav nav nav";
+    display: flex;
+    flex-wrap: wrap;
     align-items: center;
+    gap: 0.5rem 0.75rem;
+    min-height: 56px;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
   }
   .brand {
-    grid-area: brand;
+    flex: 1 1 auto;
+    display: flex;
+    align-items: center;
+    line-height: 1.2;
+    min-height: 2.25rem;
   }
   .nav-toggle {
     display: inline-flex;
-    grid-area: toggle;
+    align-items: center;
+    justify-content: center;
+    flex: 0 0 auto;
+    align-self: center;
   }
   .nav-right {
-    grid-area: navright;
+    flex: 0 0 auto;
+    display: flex;
+    align-items: center;
+    align-self: center;
     gap: 0.5rem;
   }
   .nav-links {
     display: none;
-    grid-area: nav;
+    flex: 1 1 100%;
     width: 100%;
     flex-direction: column;
     align-items: stretch;
@@ -248,8 +272,11 @@ section h2::before {
   color: var(--accent);
 }
 .btn[disabled] {
-  opacity: 0.6;
+  opacity: 0.55;
   cursor: not-allowed;
+}
+.btn-secondary[disabled] {
+  border-style: dashed;
 }
 
 /* Hero */
@@ -290,6 +317,8 @@ section h2::before {
 .hero .short {
   max-width: 720px;
   font-size: 1.05rem;
+  color: #c5d0de;
+  line-height: 1.7;
 }
 .hero-actions {
   display: flex;
@@ -323,11 +352,11 @@ section h2::before {
   box-shadow: var(--shadow);
 }
 .skill-card h3 {
-  font-size: 0.95rem;
+  font-size: 0.9rem;
   color: var(--accent);
   margin-bottom: 0.75rem;
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
+  font-weight: 600;
+  letter-spacing: 0.02em;
 }
 .skill-tags {
   display: flex;
@@ -352,6 +381,7 @@ section h2::before {
 .exp-card {
   background: var(--surface);
   border: 1px solid var(--border);
+  border-left: 3px solid rgba(34, 211, 238, 0.35);
   border-radius: var(--radius);
   padding: 1.5rem;
   box-shadow: var(--shadow);
@@ -414,8 +444,7 @@ section h2::before {
   transition: transform 0.15s ease, border-color 0.15s ease;
 }
 .focus-card:hover {
-  transform: translateY(-2px);
-  border-color: var(--accent);
+  border-color: rgba(34, 211, 238, 0.45);
 }
 .focus-card h3 {
   font-size: 1rem;
@@ -443,13 +472,14 @@ section h2::before {
   border: 1px solid var(--border);
   border-radius: var(--radius);
   padding: 1.25rem;
+  box-shadow: var(--shadow);
 }
 .cert-card h3 {
-  font-size: 0.95rem;
+  font-size: 0.9rem;
   color: var(--accent);
   margin-bottom: 0.75rem;
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
+  font-weight: 600;
+  letter-spacing: 0.02em;
 }
 .cert-card ul {
   margin: 0;
@@ -466,6 +496,7 @@ section h2::before {
   border: 1px solid var(--border);
   border-radius: var(--radius);
   padding: 1.25rem;
+  box-shadow: var(--shadow);
 }
 .edu-card h3 {
   margin-bottom: 0.25rem;
@@ -479,6 +510,19 @@ section h2::before {
 .edu-card .period {
   color: var(--muted);
   font-size: 0.85rem;
+}
+
+/* Site about */
+.site-about-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1.25rem;
+  box-shadow: var(--shadow);
+}
+.site-about-card p {
+  margin: 0;
+  line-height: 1.65;
 }
 
 /* Contact */
@@ -496,10 +540,11 @@ section h2::before {
 /* Footer */
 .footer {
   border-top: 1px solid var(--border);
-  padding: 2rem 0;
+  padding: 1.75rem 0 2rem;
   text-align: center;
   color: var(--muted);
-  font-size: 0.85rem;
+  font-size: 0.8rem;
+  line-height: 1.6;
 }
 
 /* Subtle reveal */
