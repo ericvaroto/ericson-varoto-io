@@ -10,7 +10,7 @@ export default function Experience() {
           {t.experience.items.map((item) => (
             <article className="exp-card" key={`${item.company}-${item.period}`}>
               <div className="exp-head">
-                <span className="exp-company">{item.company}</span>
+                <h3 className="exp-company">{item.company}</h3>
                 <span className="exp-meta">
                   {item.period} · {item.location}
                 </span>

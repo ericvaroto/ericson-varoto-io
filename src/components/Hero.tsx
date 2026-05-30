@@ -27,7 +27,12 @@ export default function Hero() {
             {t.hero.primary}
           </a>
           {CV_AVAILABLE ? (
-            <a className="btn btn-secondary" href={cv.path} download={cv.downloadName}>
+            <a
+              className="btn btn-secondary"
+              href={cv.path}
+              download={cv.downloadName}
+              aria-label={t.hero.secondary}
+            >
               {t.hero.secondary}
             </a>
           ) : (

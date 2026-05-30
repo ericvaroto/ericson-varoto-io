@@ -1,5 +1,6 @@
 import { useEffect } from "react";
 import { I18nProvider, useI18n } from "./i18n";
+import { applyPageMeta } from "./utils/documentMeta";
 import Header from "./components/Header";
 import Hero from "./components/Hero";
 import About from "./components/About";
@@ -16,13 +17,7 @@ function Shell() {
   const { lang, t } = useI18n();
 
   useEffect(() => {
-    document.title = t.meta.title;
-    const desc = document.querySelector('meta[name="description"]');
-    if (desc) desc.setAttribute("content", t.meta.description);
-    const ogt = document.querySelector('meta[property="og:title"]');
-    if (ogt) ogt.setAttribute("content", t.meta.title);
-    const ogd = document.querySelector('meta[property="og:description"]');
-    if (ogd) ogd.setAttribute("content", t.meta.description);
+    applyPageMeta(t.meta.title, t.meta.description);
   }, [lang, t]);
 
   return (

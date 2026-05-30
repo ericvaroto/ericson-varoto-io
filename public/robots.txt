@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://ericvaroto.github.io/ericson-varoto-io/sitemap.xml
