@@ -7,8 +7,8 @@ export default function Experience() {
       <div className="container">
         <h2>{t.experience.title}</h2>
         <div className="timeline">
-          {t.experience.items.map((item, i) => (
-            <article className="exp-card" key={i}>
+          {t.experience.items.map((item) => (
+            <article className="exp-card" key={`${item.company}-${item.period}`}>
               <div className="exp-head">
                 <span className="exp-company">{item.company}</span>
                 <span className="exp-meta">
@@ -22,7 +22,7 @@ export default function Experience() {
                 ))}
               </ul>
               <div className="exp-stack">
-                <strong>Stack:</strong> {item.stack}
+                <strong>{t.experience.stackLabel}:</strong> {item.stack}
               </div>
             </article>
           ))}

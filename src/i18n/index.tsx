@@ -38,9 +38,11 @@ export interface Translation {
     contact: string;
     linkedin: string;
     languageLabel: string;
+    menuLabel: string;
   };
   hero: {
     headline: string;
+    tags: string[];
     short: string;
     primary: string;
     secondary: string;
@@ -58,7 +60,7 @@ export interface Translation {
     title: string;
     groups: { backend: string; cloud: string; arch: string; tools: string };
   };
-  experience: { title: string; present: string; items: ExperienceItem[] };
+  experience: { title: string; present: string; stackLabel: string; items: ExperienceItem[] };
   focus: { title: string; cards: FocusCard[] };
   certifications: {
     title: string;

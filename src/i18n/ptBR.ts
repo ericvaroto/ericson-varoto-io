@@ -8,7 +8,7 @@ export const ptBR: Translation = {
   },
   nav: {
     about: "Sobre",
-    skills: "Skills",
+    skills: "Competências",
     experience: "Experiência",
     focus: "Foco",
     certifications: "Certificações",
@@ -16,12 +16,13 @@ export const ptBR: Translation = {
     contact: "Contato",
     linkedin: "LinkedIn",
     languageLabel: "Idioma",
+    menuLabel: "Abrir menu",
   },
   hero: {
-    headline:
-      "Tech Lead | Engenheiro de Software Sênior Backend | Arquitetura Cloud | AWS | C# .NET | Python | Observabilidade",
+    headline: "Tech Lead & Engenheiro Backend Sênior",
+    tags: ["Arquitetura Cloud", "AWS", "C# .NET", "Python", "Observabilidade", "SRE"],
     short:
-      "Mais de 10 anos construindo soluções backend de alta escala, com foco em cloud, microsserviços, sistemas distribuídos, observabilidade e confiabilidade de aplicações críticas.",
+      "Mais de 10 anos construindo soluções backend de alta escala para aplicações críticas — cloud, microsserviços, sistemas distribuídos, observabilidade e confiabilidade.",
     primary: "Ver LinkedIn",
     secondary: "Baixar CV",
     secondaryComingSoon: "Currículo em breve",
@@ -36,7 +37,7 @@ export const ptBR: Translation = {
       "Principais interesses: Backend Engineering, Cloud Architecture, Distributed Systems, Observability, SRE, Tech Leadership e uso prático de IA em engenharia de software.",
   },
   skills: {
-    title: "Core Skills",
+    title: "Competências",
     groups: {
       backend: "Backend",
       cloud: "Cloud e DevOps",
@@ -47,6 +48,7 @@ export const ptBR: Translation = {
   experience: {
     title: "Experiência",
     present: "Presente",
+    stackLabel: "Stack",
     items: [
       {
         company: "Itaú Unibanco",

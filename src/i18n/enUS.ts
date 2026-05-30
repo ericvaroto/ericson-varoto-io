@@ -16,12 +16,13 @@ export const enUS: Translation = {
     contact: "Contact",
     linkedin: "LinkedIn",
     languageLabel: "Language",
+    menuLabel: "Open menu",
   },
   hero: {
-    headline:
-      "Tech Lead | Senior Backend Engineer | Cloud Architecture | AWS | C# .NET | Python | Observability",
+    headline: "Tech Lead & Senior Backend Engineer",
+    tags: ["Cloud Architecture", "AWS", "C# .NET", "Python", "Observability", "SRE"],
     short:
-      "10+ years building high-scale backend solutions, focused on cloud, microservices, distributed systems, observability and reliability for mission-critical applications.",
+      "10+ years building high-scale backend solutions for mission-critical applications — cloud, microservices, distributed systems, observability and reliability.",
     primary: "View LinkedIn",
     secondary: "Download CV",
     secondaryComingSoon: "CV coming soon",
@@ -47,6 +48,7 @@ export const enUS: Translation = {
   experience: {
     title: "Experience",
     present: "Present",
+    stackLabel: "Stack",
     items: [
       {
         company: "Itaú Unibanco",
@@ -157,15 +159,15 @@ export const enUS: Translation = {
     certificationsLabel: "Certifications",
     awardsLabel: "Recognition",
     certifications: [
-      "SRE - Trained (pt-BR)",
+      "SRE - Trained",
       "Vibe Coding",
       "Bot Developer",
       "Jumpstart To Automation Anywhere",
       "Salesforce - Workflow Digital - Trained",
     ],
     awards: [
-      "Você em Alta",
-      "PRAD - Programa de Remuneração por Alto Desempenho",
+      "Você em Alta — High Performer Recognition",
+      "PRAD — High Performance Compensation Program",
     ],
   },
   education: {

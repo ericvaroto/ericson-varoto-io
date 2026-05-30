@@ -9,6 +9,13 @@ export default function Hero() {
       <div className="container reveal">
         <p className="headline">{t.hero.headline}</p>
         <h1>{FULL_NAME}</h1>
+        <ul className="hero-tags" aria-label={t.hero.headline}>
+          {t.hero.tags.map((tag) => (
+            <li key={tag}>
+              <span className="hero-tag">{tag}</span>
+            </li>
+          ))}
+        </ul>
         <p className="short">{t.hero.short}</p>
         <div className="hero-actions">
           <a

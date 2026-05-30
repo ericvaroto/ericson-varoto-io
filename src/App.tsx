@@ -15,7 +15,6 @@ function Shell() {
   const { lang, t } = useI18n();
 
   useEffect(() => {
-    document.documentElement.lang = lang === "pt-BR" ? "pt-BR" : "en";
     document.title = t.meta.title;
     const desc = document.querySelector('meta[name="description"]');
     if (desc) desc.setAttribute("content", t.meta.description);
@@ -27,8 +26,11 @@ function Shell() {
 
   return (
     <>
+      <a className="skip-link" href="#main">
+        {lang === "pt-BR" ? "Ir para o conteúdo" : "Skip to content"}
+      </a>
       <Header />
-      <main>
+      <main id="main">
         <Hero />
         <About />
         <Skills />
