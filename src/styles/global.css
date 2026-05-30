@@ -30,6 +30,12 @@ body {
   scroll-padding-top: 72px;
 }
 
+@media (max-width: 960px) {
+  html {
+    scroll-padding-top: 56px;
+  }
+}
+
 a {
   color: var(--accent);
   text-decoration: none;
@@ -123,10 +129,18 @@ section h2::before {
 .nav-links a:hover {
   color: var(--text);
 }
-.nav-right {
+.header-menu {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 1.25rem;
+}
+.nav-menu-actions {
   display: flex;
   align-items: center;
   gap: 0.75rem;
+  flex-shrink: 0;
 }
 .lang-switch {
   display: inline-flex;
@@ -178,63 +192,102 @@ section h2::before {
     margin-bottom: 1.35rem;
   }
   .hero {
-    padding: 4rem 0 3rem;
+    padding: 1.5rem 0 2.25rem;
+  }
+  .hero h1 {
+    font-size: clamp(2.1rem, 9vw, 3rem);
+    margin-bottom: 0.6rem;
+  }
+  .hero .headline {
+    margin-bottom: 0.5rem;
+    font-size: clamp(0.95rem, 4vw, 1.1rem);
+  }
+  .hero-tags {
+    margin-bottom: 0.75rem;
+    gap: 0.35rem;
+  }
+  .hero-tag {
+    font-size: 0.78rem;
+    padding: 0.28rem 0.6rem;
+  }
+  .hero .short {
+    font-size: 1rem;
+    line-height: 1.65;
+  }
+  .hero-actions {
+    margin-top: 0.9rem;
+    gap: 0.65rem;
+  }
+  .hero-actions .btn {
+    min-height: 44px;
+    padding-top: 0.7rem;
+    padding-bottom: 0.7rem;
   }
 }
 
 @media (max-width: 960px) {
   .header-inner {
-    display: flex;
     flex-wrap: wrap;
     align-items: center;
-    gap: 0.5rem 0.75rem;
-    min-height: 56px;
-    padding-top: 0.5rem;
-    padding-bottom: 0.5rem;
+    gap: 0 0.75rem;
+    min-height: 48px;
+    padding-top: 0.25rem;
+    padding-bottom: 0.25rem;
   }
   .brand {
     flex: 1 1 auto;
     display: flex;
     align-items: center;
     line-height: 1.2;
-    min-height: 2.25rem;
+    min-height: 44px;
   }
   .nav-toggle {
     display: inline-flex;
     align-items: center;
     justify-content: center;
     flex: 0 0 auto;
-    align-self: center;
+    min-width: 44px;
+    min-height: 44px;
   }
-  .nav-right {
-    flex: 0 0 auto;
-    display: flex;
-    align-items: center;
-    align-self: center;
-    gap: 0.5rem;
-  }
-  .nav-links {
+  .header-menu {
     display: none;
     flex: 1 1 100%;
-    width: 100%;
     flex-direction: column;
     align-items: stretch;
     gap: 0;
-    padding: 0.5rem 0 0.75rem;
+    padding: 0.35rem 0 0.65rem;
     border-top: 1px solid var(--border);
   }
-  .nav-links.open {
+  .header-menu.open {
     display: flex;
   }
+  .nav-links {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0;
+    width: 100%;
+  }
   .nav-links a {
-    padding: 0.55rem 0;
+    padding: 0.5rem 0;
     border-bottom: 1px solid var(--border);
   }
   .nav-links a:last-child {
     border-bottom: 0;
   }
+  .nav-menu-actions {
+    padding-top: 0.65rem;
+    margin-top: 0.35rem;
+    border-top: 1px solid var(--border);
+    gap: 0.65rem;
+  }
+  .lang-switch button {
+    min-height: 44px;
+    padding-left: 0.85rem;
+    padding-right: 0.85rem;
+  }
   .nav-linkedin {
-    padding: 0.45rem 0.75rem;
+    min-height: 44px;
+    padding: 0.55rem 0.9rem;
     font-size: 0.82rem;
   }
 }

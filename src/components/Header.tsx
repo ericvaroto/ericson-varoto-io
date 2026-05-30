@@ -37,7 +37,7 @@ export default function Header() {
           type="button"
           className="nav-toggle"
           aria-expanded={menuOpen}
-          aria-controls="primary-nav"
+          aria-controls="header-menu"
           aria-label={t.nav.menuLabel}
           onClick={() => setMenuOpen((open) => !open)}
         >
@@ -45,44 +45,42 @@ export default function Header() {
           <span aria-hidden="true" />
           <span aria-hidden="true" />
         </button>
-        <nav
-          id="primary-nav"
-          className={`nav-links${menuOpen ? " open" : ""}`}
-          aria-label="Primary"
-        >
-          {NAV_IDS.map((id) => (
-            <a key={id} href={`#${id}`} onClick={closeMenu}>
-              {t.nav[id]}
+        <div id="header-menu" className={`header-menu${menuOpen ? " open" : ""}`}>
+          <nav className="nav-links" aria-label="Primary">
+            {NAV_IDS.map((id) => (
+              <a key={id} href={`#${id}`} onClick={closeMenu}>
+                {t.nav[id]}
+              </a>
+            ))}
+          </nav>
+          <div className="nav-menu-actions">
+            <div className="lang-switch" role="group" aria-label={t.nav.languageLabel}>
+              <button
+                type="button"
+                className={lang === "pt-BR" ? "active" : ""}
+                onClick={() => setLang("pt-BR")}
+                aria-pressed={lang === "pt-BR"}
+              >
+                PT
+              </button>
+              <button
+                type="button"
+                className={lang === "en-US" ? "active" : ""}
+                onClick={() => setLang("en-US")}
+                aria-pressed={lang === "en-US"}
+              >
+                EN
+              </button>
+            </div>
+            <a
+              className="btn btn-secondary nav-linkedin"
+              href={LINKEDIN_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              {t.nav.linkedin}
             </a>
-          ))}
-        </nav>
-        <div className="nav-right">
-          <div className="lang-switch" role="group" aria-label={t.nav.languageLabel}>
-            <button
-              type="button"
-              className={lang === "pt-BR" ? "active" : ""}
-              onClick={() => setLang("pt-BR")}
-              aria-pressed={lang === "pt-BR"}
-            >
-              PT
-            </button>
-            <button
-              type="button"
-              className={lang === "en-US" ? "active" : ""}
-              onClick={() => setLang("en-US")}
-              aria-pressed={lang === "en-US"}
-            >
-              EN
-            </button>
           </div>
-          <a
-            className="btn btn-secondary nav-linkedin"
-            href={LINKEDIN_URL}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            {t.nav.linkedin}
-          </a>
         </div>
       </div>
     </header>

@@ -91,10 +91,10 @@ Replace the PDFs to update content; keep the filenames unless you also update `p
 
 ## SEO and static assets
 
-- [`index.html`](index.html) — default meta tags and `%BASE_URL%`-aware icon/manifest links
+- [`index.html`](index.html) — default meta tags and `%BASE_URL%`-aware icon links
 - [`public/robots.txt`](public/robots.txt), [`public/sitemap.xml`](public/sitemap.xml)
 - [`public/og-image.png`](public/og-image.png) — social preview image (1200×630 PNG; source SVG in [`public/og-image.svg`](public/og-image.svg))
-- [`public/manifest.webmanifest`](public/manifest.webmanifest), [`public/favicon.svg`](public/favicon.svg), [`public/apple-touch-icon.svg`](public/apple-touch-icon.svg)
+- [`public/favicon.svg`](public/favicon.svg), [`public/apple-touch-icon.svg`](public/apple-touch-icon.svg) (no web app manifest — site is a normal website, not installable as a PWA)
 
 ## Privacy
 
